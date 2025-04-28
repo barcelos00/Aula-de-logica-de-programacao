@@ -1,0 +1,33 @@
+Exercicio 3; 
+Elabore uma função que receba como parâmetros dois números inteiros e imprima uma mensagem se um for divisvel pelo outro.
+Em seguida, fa¸ca um programa que leia um n´umero inteiro do teclado e chame a funçao para verificar se este numero é divisivel por 2, por 3, por 5 e por 7 (serão 4 chamadas).
+Faça um teste de mesa com o valor 14.
+#include <iostream>
+
+using namespace std;
+
+
+void ImpN(int a, int b) {
+    if (b != 0 && a % b == 0) {
+        printf("%d eh divisivel por %d\n", a, b);
+    }
+    else if (a != 0 && b % a == 0) {
+        printf("%d eh divisivel por %d\n", b, a);
+    }
+    else {
+        printf("Nao eh divisivel por %d e %d\n", a, b);
+    }
+}
+
+int main() {
+    int n;
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &n);
+
+    ImpN(n, 2);
+    ImpN(n, 3);
+    ImpN(n, 5);
+    ImpN(n, 7);
+
+    return 0;
+}
