@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1742925079 source:c:\users\victo\desktop\08\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+
