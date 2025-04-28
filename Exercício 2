@@ -3,21 +3,23 @@ Em seguida, faça um programa que leia um número inteiro do teclado e chame a f
 Faça um teste de mesa com o valor 4 e outro com o valor 5.
 
 
-int main(){
-    float a,b,c,d=0,x1=0,x2=0;
-    printf("\nInforme os 3 nos: ");
-    scanf ("%f%f%f",&a, &b,&c);
-    d=(bb)-(4a*c);
-    x1=(-b+sqrt(d))/(2*a);
-    x2=(-b-sqrt(d))/(2*a);
-    if (d>=0){
-            printf("\nAs raizes reais sao: %.2f e %.2f", x1,x2);
+#include <iostream>
+#include <math.h>
 
+using namespace std;
 
-    }
-    else { printf("\n nao existe raiz real!");
-
-
+void imprime (int n){
+        if(n%2 ==0){
+                printf("\n%d eh par!",n);}
+            else{
+                printf("\n%d eh impar!",n);
+            }
         }
-        return 0;
+
+int main (){
+    int n;
+    printf ("\nDigite um valor inteiro: ");
+    scanf ("%d", &n);
+    imprime(n);
+    return 0;
     }
